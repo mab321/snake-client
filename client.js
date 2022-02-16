@@ -14,6 +14,8 @@ const connect = function () {
 
     // write name
     conn.write('Name: MAB');
+    
+    
   })
 
   conn.on('data', (data) => {
@@ -23,5 +25,5 @@ const connect = function () {
   return conn;
 };
 
-module.exports = connect;
+module.exports = {connect};
 
